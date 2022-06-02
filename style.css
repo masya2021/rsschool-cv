@@ -1,0 +1,13 @@
+.first_name {
+    font-weight: 600;
+    font-size: 26px;
+}
+.last_name{
+    font-weight: 600;
+    font-size: 26px;
+}
+.ft{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
