@@ -5,86 +5,192 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
+
+
 </head>
 
 <body>
     <div class="wrapper">
-        <header>
-            <div class="foto">
-                <img src="./img/IMG_20190713_192018.jpg" alt="my_foto">
-            </div>
-            <div class="my_name">
-                <span class="first_name">Yuri</span>
-                <br>
-                <span class="last_name">Hortov</span>
-            </div>
-        </header>
-        <main>
-            <div class="common">
-                <aside class="contacts">
-                    <ul>
-                        <li class="location">
-                            <span>Country and City: </span>
-                            <a class="map"
-                                href="https://yandex.ru/maps/?um=constructor%3Ac46c2e06dd0a866b16218b0a6a8c1f2e8313e5a96fa4492c09b19e4b71ef57f9&source=constructorLink">Belarus,
-                                Minsk</a>
-                        </li>
-                        <li class="email">
-                            <span>Email:</span>
-                            <a href="mailto:azarro@tut.by"> azarro@tut.by</a>
-                        </li>
-                        <li class="phone">
-                            <span> Phonenumber: </span>
-                            +375 44 548 55 39
-                        </li>
+        <header class="header">
+            <div class="container">
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                        <li class="nav-item"><a href="#about_me" class="nav-link">About Me</a></li>
+                        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                        <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                        <li class="nav-item"><a href="#languges" class="nav-link">Languges</a></li>
                     </ul>
-                </aside>
-                <section class="description">
-                    <div class="about_me">
-                        <h3 class="text">About me</h3>
-                        <p>I’m 35 years old. I’m married and have a son.
-                            <br>I went to the courses because my work stopped bringing me satisfaction, it became
-                            uninteresting to me.
-                            Many friends I know have retrained in IT, <br>I've seen what they do and I liked it and I
-                            decided
-                            that I can do it too.
-                        </p>
+                </nav>
+
+                <div class="header__content">
+                    <div class="foto">
+                        <img src="./img/IMG_20190713_192018.jpg" alt="my_foto">
                     </div>
-                    <div class="education">
-                        <h3 class="text">Education</h3>
-                        <p>I graduated from BNTU with a specialty: automated electric drive has.
-                            <br>
-                            At the moment I am taking courses at RSSchool</p>
-                    </div>
-                    <div class="work">
-                        <h3 class="text">Work</h3>
-                        <p>I'm not working at the moment. Prior to that, he worked as an Engineer at JSC "Plant of
-                            Special Automation".</p>
-                    </div>
-                    <div class="languges">
-                        <h3 class="text">Languges</h3>
-                        <ul class="list">
-                            <li> Belarusian </li>
-                            <li> English (beginner) </li>
-                            <li> Russian </li>
-                        </ul>
-                    </div>
-                </section>
+                    <h1 class="name">
+                        Yuri Hortov
+                    </h1>
+                </div>
+
             </div>
+
+
+        </header>
+        <main class="main">
+
+            <div class="container">
+                <div class="common">
+                    <aside class="contacts" id="contacts">
+                        <ul>
+
+                            <li class="location size">
+                                <span>Country and City: </span>
+                                <a class="map"
+                                    href="https://yandex.ru/maps/?um=constructor%3Ac46c2e06dd0a866b16218b0a6a8c1f2e8313e5a96fa4492c09b19e4b71ef57f9&source=constructorLink">Belarus,
+                                    Minsk</a>
+                            </li>
+
+                            <li class="email size">
+                                <span>Email:</span>
+                                <a href="mailto:azarro@tut.by"> azarro@tut.by</a>
+                            </li>
+
+                            <li class="phone size">
+                                <span> Phonenumber: </span>
+                                +375 44 548 55 39
+                            </li>
+
+                            <li class="social size">
+                                <span class="social__telegram telegram"> telegram:</span>
+                                <a href="https://t.me/azarro87" class="telegram-link" target="_blank"><img
+                                        src="./img/telegram_logo_icon_134592.png" alt="telegram__icon"></a>
+
+                                <span class="social__viber viber"> viber:</span>
+                                <a href="viber://chat?number=%2B375445485539" class="viber-link" target="_blank"><img
+                                        src="./img/viber.png" alt="viber__icon"></a>
+                            </li>
+
+                        </ul>
+                    </aside>
+                    <section class="description">
+
+                        <div class="description__about-me" id="about_me">
+                            <h2 class="title">About me</h2>
+                            <p class="description__text"> I am 35 years old. I am married and have a son.
+                                <br>I took courses because my work ceased to bring me satisfaction, it became
+                                uninteresting
+                                to
+                                me. Many of my friends retrained in IT, <br>I saw what they do and I liked it, and I
+                                decided
+                                that I could do it too.
+                            </p>
+                        </div>
+
+                        <div class="education" id="education">
+                            <h2 class="title">Education</h2>
+                            <p class="description__text">I graduated from BNTU with a specialty: automated electric
+                                drive has.
+                                <br>
+                                At the moment I am taking courses at RSSchool</p>
+                        </div>
+
+                        <div class="work" id="work">
+                            <h2 class="title">Work</h2>
+                            <p class="description__text">I'm not working at the moment. Prior to that, he worked as an
+                                Engineer at JSC "Plant of
+                                SpecAutomation".</p>
+                        </div>
+
+                        <div class="skills" id="skills">
+                            <h2 class="title">Skills</h2>
+                            <ul class="list">
+                                <li>html
+                                    <div class="progress">
+                                        <span class="progress__html skill">
+                                            <span class="skill__progress"></span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>css
+                                    <div class="progress">
+                                        <span class="progress__css skill">
+                                            <span class="skill__progress"></span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>js
+                                    <div class="progress">
+                                        <span class="progress__js skill">
+                                            <span class="skill__progress"></span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>Figma
+                                    <div class="progress">
+                                        <span class="progress__figma skill">
+                                            <span class="skill__progress"></span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>Photoshop
+                                    <div class="progress">
+                                        <span class="progress__photoshop skill">
+                                            <span class="skill__progress"></span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>GitHub
+                                    <div class="progress">
+                                        <span class="progress__github skill">
+                                            <span class="skill__progress"></span>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="languges" id="languges">
+                            <h2 class="title">Languges</h2>
+                            <ul class="list">
+                                <li> Belarusian </li>
+                                <li> English (beginner) </li>
+                                <li> Russian </li>
+                            </ul>
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+
+
+
         </main>
         <footer>
-            <div class="ft">
-                <div class="github">
-                    <a href="https://github.com/masya2021" target="blank"><img src="./img/github.png" alt="logo"></a>
-                </div>
-                <div class="year">2022</div>
-                <div class="rss">
-                    <a href="https://rs.school/js/" target="blank">
-                        <img src="./img/RSS.png" alt="RSSchool"></a>
+
+            <div class="container">
+                <div class="ft">
+                    <div class="github">
+                        <a href="https://github.com/masya2021" target="blank" class="github__link"><img
+                                src="./img/github.png" class="github__logo" alt="logo__GitHub">
+                            <span class="github__title">masya2021</span>
+                        </a>
+
+                    </div>
+                    <div class="year">2022</div>
+                    <div class="rss">
+                        <a href="https://rs.school/js/" target="blank">
+                            <img src="./img/rs_school_js.svg" class="logo-school" alt="RSSchool__icon"></a>
+                    </div>
                 </div>
             </div>
+
         </footer>
     </div>
 </body>

@@ -1,13 +1,258 @@
-.first_name {
-    font-weight: 600;
-    font-size: 26px;
+html, body {
+    height: 100%;
 }
-.last_name{
-    font-weight: 600;
-    font-size: 26px;
+
+body{
+    width: 100%;
 }
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.nav {
+    background-color: beige;
+    padding: 15px 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    list-style: none;
+    line-height: 50px;
+    gap: 5%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #1dd836;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: rgb(29, 5, 253);
+    transition: color 0.4s;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 0;
+
+    background-color: rgb(255, 249, 241);
+}
+
+.foto
+ img{
+    width: 320px;
+    border: 3px solid rosybrown;
+}
+
+.name { 
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: black;
+    padding-top: 15px;
+}
+
+main
+.common{
+    display: flex;
+ }
+
+.contacts{
+    display: flex;
+    background-color: rgb(208, 211, 212);
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    line-height: 150%;
+    padding-top: 10px;
+}
+
+.size {
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.telegram-link {
+    padding-top: 10px;
+}
+
+.telegram-link img {
+    width: 35px;
+    height: auto;
+    padding: 0 15px 0 7px;
+}
+
+.viber {
+    display: flex;
+    align-items: center;
+}
+
+.viber-link {
+    padding-top: 10px;
+    padding-left: 7px;
+}
+
+.viber-link img {
+    width: 32px;
+    height: 32px;
+}
+
+.description{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    background-color: rgb(255, 225, 235);
+    padding: 20px;  
+}
+
+.title{
+    padding: 18px 0;
+    font-size: 26px;
+    color: limegreen;
+    text-align: center;
+}
+
+.description__text{
+    line-height: 150%;
+    font-size: 18px;
+    text-align: start;
+    color: black;
+    text-indent:25px;
+}
+
+.list{
+    list-style: square;
+    padding-left: 25px;
+    font-size: 18px;
+    position: relative;
+}
+
+.progress {
+    max-width: 280px;
+    width: 100%;
+    height: 10px;
+    margin-top: 5px;
+    background-color: #e71a1ab4;
+}
+.progress span {
+    display: block;
+    height: 100%;
+}
+
+/* .value {
+    display: flex;
+    padding-left: 20%;
+} */
+
+.progress__html {
+    width: 75%;
+}
+
+.progress__css {
+    width: 55%;
+}
+
+.progress__js {
+    width: 7%;
+}
+
+.progress__figma {
+    width: 55%;
+}
+
+.progress__photoshop{
+    width: 45%;
+}
+
+.progress__github {
+    width: 50%;
+}
+
+.skill__progress {
+    background-color: yellowgreen;
+    /* animation: progress 1s ease; */
+}
+
+.list li {
+    padding: 5px 0 5px 10px;
+}
+
+.flex-li{
+    display: flex;
+    list-style: square;
+    align-items: center;
+}
+
+footer
 .ft{
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(169, 205, 206);
     justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.github {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.github__link {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.github__title {
+    padding-top: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+.github__logo {
+    padding-left: 10px;
+    width: 45px;
+    height: auto;
+}
+
+footer
+.year{
+    font-size: 25px;
+    color: crimson;
+}
+
+footer
+.ft
+.rss
+a
+img{
+    width: 120px;
+    height: 86px;
 }
