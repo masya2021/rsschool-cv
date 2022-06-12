@@ -101,6 +101,16 @@ h2 {
     font-weight: normal;
 }
 
+.change__color {
+    text-decoration: none;
+    color: #0281ca;
+}
+
+.change__color:hover {
+    color: red;
+    transition: .4s ease-in-out;
+}
+
 .size {
     font-size: 18px;
     line-height: 150%;
@@ -140,7 +150,7 @@ h2 {
     display: block;
     margin: 0 auto;
     width: 60%;
-    background-color: rgb(172, 210, 219);
+    background-color: rgb(185, 208, 215);
     padding: 20px;  
 }
 
@@ -198,15 +208,15 @@ h2 {
 }
 
 .progress__figma {
-    width: 55%;
+    width: 50%;
 }
 
 .progress__photoshop{
-    width: 45%;
+    width: 40%;
 }
 
 .progress__github {
-    width: 50%;
+    width: 42%;
 }
 
 .skill__progress {
@@ -256,7 +266,6 @@ h2 {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    cursor: pointer;
 }
 
 .list__name {
@@ -271,6 +280,7 @@ h2 {
 .list__link img{
     width: 370px;
     height: 250px;
+    cursor: pointer;
 }
 
 footer
