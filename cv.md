@@ -18,3 +18,14 @@
 
 ### I'm not working at the moment. Prior to that, he worked as an Engineer at JSC "Plant of Special Automation".
 
+## _Languages_
+
+####
+
+- Belarusian
+- English(A1)
+- Russian
+
+## Link to my GitHub
+ 
+## **_[My GitHub](https://github.com/masya2021)_**
