@@ -296,202 +296,162 @@ img{
     width: 120px;
     height: 86px;
 }
-/*     B U R G E R   M E N U 
+/*     B U R G E R   M E N U
     =======================    */
 
-    .burger {
-        display: none;
-        background: none;
-    
-        border: 0;
-        cursor: pointer;
+.burger {
+    display: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+.burger.burger-close {
+    display: none;
+}
+.burger__item{
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #FFFFFF;
+    opacity: 1;
+    font-size: 0;
+    color: transparent;
+    position: relative;
+}
+.burger__item::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    z-index: 1;
+}
+    .burger__item::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    z-index: 1;
+}
+@media (max-width:1312px) {
+    .list__link img{
+        width: 410px;
+        height: auto;
     }
-    .burger.burger-close {
-        display: none;
+}
+@media (max-width:768px) {
+    .person__name {
+        max-width: 160px;
+        padding-right: 25px;
+        font-size: 50px;
+        align-self: center;
+        line-height: 1.4;
+        text-align: center;
     }
-    
-    .burger__item{
-        display: block;
-        width: 35px;
-        height: 2px;
-        background-color: #FFFFFF;
-        opacity: 1;
-    
-        font-size: 0;
-        color: transparent;
-        position: relative;
+    .common {
+        flex-direction: column;
     }
-    .burger__item::before{
-        content: "";
+    .contacts{
         width: 100%;
-        height: 100%;
-        background-color: #FFFFFF;
-        position: absolute;
-        left: 0;
-        top: -10px;
-        z-index: 1;
-    }  
-    .burger__item::after{
-        content: "";
+        padding: 15px 0;
+    }
+    .description {
         width: 100%;
-        height: 100%;
-        background-color: #FFFFFF;
-        position: absolute;
-        left: 0;
-        top: 10px;
-        z-index: 1;
+        padding: 0;
     }
-    
-    
-    
-    
-    @media (max-width:1312px) {
-    
-        .list__link img{
-            width: 410px;
-            height: auto;
-        }
-    
+    .skills {
+        padding: 0 20px;
     }
-    
-    @media (max-width:768px) {
-        
-        .person__name {
-            max-width: 160px;
-            padding-right: 25px;
-            font-size: 50px;
-            align-self: center;
-            line-height: 1.4;
-            text-align: center;
-        }
-    
-        .common {
-            flex-direction: column;
-        }
-    
-        .contacts{
-            width: 100%;
-            padding: 15px 0;
-        }
-    
-        .description {
-            width: 100%;
-            padding: 0;
-        }
-    
-        .skills {
-            padding: 0 20px;
-        }
-    
-        .code {
-            padding: 0 20px;
-        }
-    
-        .languges {
-            padding: 0 20px;
-        }
+    .code {
+        padding: 0 20px;
     }
-    
-    @media (max-width:662px) {
-        .person__direction {
-           text-align: center;
-        }
-    
-        .list__skills {
-            padding-left: 55px;
-        }
+    .languges {
+        padding: 0 20px;
     }
-    
-    
-    @media (max-width:576px) {
-        
-        .header__content {
-            flex-direction: column;
-        }
-    
-        .foto {
-            text-align: center;
-            /* padding: 0 20px; */
-        }
-    
-        .person__name {
-            max-width: 320px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-    
-        .person__direction {
-            font-size: 22px;    
-        }
-    
-        .common {
-            flex-direction: column;
-        }
-    
-        .contacts{
-            width: 100%;
-            padding: 15px 0;
-        }
-    
-        .description {
-            width: 100%;
-            padding: 0;
-        }
-    
-        .list__link img{
-            max-width: 390px;
-            height: auto;
-        }
-    
+}
+@media (max-width:662px) {
+    .person__direction {
+        text-align: center;
     }
-    
-    @media (max-width:468px) {
-        .list__link img{
-            max-width: 330px;
-        }
-        .list__skills {
-            padding-left: 30px;
-        }
+    .list__skills {
+        padding-left: 55px;
     }
-    
-    @media (max-width:378px) {
-        
-        .wrapper{
-            flex-wrap: wrap;
-        }
-    
-        .name {
-            font-size: 46px;
-            max-width: 280px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-    
-        .list__link img{
-            max-width: 300px;
-        }
-    
-        .foto img {
-            transform: scale(0.85);
-        }
-    
-        footer .ft {
-            flex-direction: column;
-            gap: 20px;
-        }
-    
-        footer
-        .ft
-        .rss
-        a
-        img{
-            width: 120px;
-            height: auto;
-        }
+}
+@media (max-width:576px) {
+    .header__content {
+        flex-direction: column;
     }
-    
-    @media (max-width:340px) {
-        .foto img {
-            width: 260px;
-        }
+    .foto {
+        text-align: center;
     }
+    .person__name {
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .person__direction {
+        font-size: 22px;
+    }
+    .common {
+        flex-direction: column;
+    }
+    .contacts{
+        width: 100%;
+        padding: 15px 0;
+    }
+    .description {
+        width: 100%;
+        padding: 0;
+    }
+    .list__link img{
+        max-width: 390px;
+        height: auto;
+    }
+}
+@media (max-width:468px) {
+    .list__link img{
+        max-width: 330px;
+    }
+    .list__skills {
+        padding-left: 30px;
+    }
+}
+@media (max-width:378px) {
+    .wrapper{
+        flex-wrap: wrap;
+    }
+    .name {
+        font-size: 46px;
+        max-width: 280px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .list__link img{
+        max-width: 300px;
+    }
+    .foto img {
+        transform: scale(0.85);
+    }
+    footer .ft {
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer
+    .ft
+    .rss
+    a
+    img{
+        width: 120px;
+        height: auto;
+    }
+}
+@media (max-width:340px) {
+    .foto img {
+        width: 260px;
+    }
+}
