@@ -16,7 +16,7 @@
 
 ## _Work_
 
-### I'm not working at the moment. Prior to that, he worked as an Engineer at JSC "Plant of Special Automation".
+### I worked as an engineer at JSC Special Automation Plant. Now I work in an online store and decided to study at the Rs-School online school.
 
 ## _Languages_
 
