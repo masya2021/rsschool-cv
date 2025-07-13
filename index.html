@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My CV</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro:wght@400;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <header class="header">
+      <div class="container">
+         <nav class="nav">
+            <ul class="nav-list">
+               <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+               <li class="nav-item"><a href="#about_me" class="nav-link">About Me</a></li>
+               <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+               <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+               <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+               <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+               <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+            </ul>
+         </nav>
+         <div class="header__content">
+            <div class="foto">
+               <img src="./assets/img/IMG_20220320_143307ы.jpg" width="420" alt="my_foto">
+            </div>
+            <div class="person">
+               <h1 class="person__name">
+                  Yuri Hortov
+               </h1>
+               <p class="person__direction">Junior Frontend Developer</p>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <div class="mobile">
+      <button class="burger burger__menu" id="burger__menu" type="button">
+         <span class="burger__item" id="burger__item">Menu</span>
+      </button>
+   </div>
+
+   <main class="main">
+      <div class="container">
+         <div class="common">
+            <aside class="contacts">
+               <ul id="contacts">
+                  <li class="location size">
+                     <span>Country and City: </span>
+                     <a class="map"
+                        href="https://yandex.ru/maps/?um=constructor%3Ac46c2e06dd0a866b16218b0a6a8c1f2e8313e5a96fa4492c09b19e4b71ef57f9&source=constructorLink">Belarus,&nbsp;Minsk</a>
+                  </li>
+                  <li class="email size">
+                     <span>Email:</span>
+                     <a href="mailto:azarro@tut.by"> azarro@tut.by</a>
+                  </li>
+                  <li class="phone size">
+                     <span> Phonenumber: </span>
+                     +375&nbsp;44&nbsp;548&nbsp;55&nbsp;39
+                  </li>
+                  <li class="social size">
+                     <span class="social__telegram telegram"> telegram:</span>
+                     <a href="https://t.me/azarro87" class="telegram-link" target="_blank"><img
+                           src="./assets/img/telegram_logo_icon_134592.png" alt="telegram__icon"></a>
+
+                     <span class="social__viber viber"> viber:</span>
+                     <a href="viber://chat?number=%2B375445485539" class="viber-link" target="_blank"><img
+                           src="./assets/img/viber.png" alt="viber__icon"></a>
+                  </li>
+               </ul>
+            </aside>
+
+            <section class="description">
+               <div class="description__about-me" id="about_me">
+                  <h2 class="title">About me</h2>
+                  <p class="description__text"> I develop in the field of Front-End development. I am
+                     interested and fascinated by this direction. I want to be a great developer
+                  </p>
+               </div>
+               <div class="education" id="education">
+                  <h2 class="title">Education</h2>
+                  <p class="description__text">I graduated from BNTU with a specialty: automated electric
+                     drive has.
+                     <br>
+                     At the moment I am taking courses at RSSchool</p>
+               </div>
+
+
+               <div class="work" id="work">
+                  <h2 class="title">Work</h2>
+                  <p class="description__text">I work in an online store.
+                     Before that, I worked as an Engineer at JSC "Plant
+                     Special automation".</p>
+               </div>
+               <div class="skills" id="skills">
+                  <h2 class="title">Skills</h2>
+                  <ul class="list list__skills">
+                     <li>html
+                        <div class="progress">
+                           <span class="progress__html skill">
+                              <span class="skill__progress"></span>
+                           </span>
+                        </div>
+                     </li>
+                     <li>css
+                        <div class="progress">
+                           <span class="progress__css skill">
+                              <span class="skill__progress"></span>
+                           </span>
+                        </div>
+                     </li>
+                     <li>js
+                        <div class="progress">
+                           <span class="progress__js skill">
+                              <span class="skill__progress"></span>
+                           </span>
+                        </div>
+                     </li>
+                     <li>Figma
+                        <div class="progress">
+                           <span class="progress__figma skill">
+                              <span class="skill__progress"></span>
+                           </span>
+                        </div>
+                     </li>
+                     <li>Photoshop
+                        <div class="progress">
+                           <span class="progress__photoshop skill">
+                              <span class="skill__progress"></span>
+                           </span>
+                        </div>
+                     </li>
+                     <li>GitHub
+                        <div class="progress">
+                           <span class="progress__github skill">
+                              <span class="skill__progress"></span>
+                           </span>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="code" id="code">
+                  <h2 class="title">Code Example</h2>
+                  <div>
+                     <pre>
+                          <code class="startcode">
+<span class="purple">function</span> <span class="orange">perimeterSequence</span> (<span class="orange">a</span>, <span class="orange">n</span>) {
+<span class="purple">let</span> <span class="orange">perimetr</span>;
+
+<span class="purple">return</span> (<span class="blue">perimetr</span> = ( <span class="blue">a</span> + <span class="blue">n</span> ) * <span class="orange">2</span>);
+}
+                          </code>
+                      </pre>
+                  </div>
+               </div>
+               <div class="project" id="project">
+                  <h2 class="title">My Projects</h2>
+                  <div class="project__list">
+                     <div class="list__item">
+                        <span class="list__name">WAYup</span>
+                        <a href="https://masya2021.github.io/Webpage/" class="list__link" target="_blank">
+                           <img src="./assets/img/projects/wayup.png" alt="wayup">
+                        </a>
+                     </div>
+                     <div class="list__item">
+                        <span class="list__name">Portfolio</span>
+                        <a href="https://masya2021.github.io/Portfolio/" class="list__link" target="_blank">
+                           <img src="./assets/img/projects/portfolio.jpg" alt="photographer__women">
+                        </a>
+                     </div>
+                     <div class="list__item">
+                        <span class="list__name">Museum</span>
+                        <a href="https://masya2021.github.io/museum/" class="list__link" target="_blank">
+                           <img src="./assets/img/projects/museum.jpg" alt="louvre">
+                        </a>
+                     </div>
+                     <div class="list__item">
+                        <span class="list__name">SomeThing</span>
+                        <a href="https://masya2021.github.io/Something/" class="list__link" target="_blank">
+                           <img src="./assets/img/projects/something.png" alt="man at the computer ">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="languges" id="languages">
+                  <h2 class="title">Languages</h2>
+                  <ul class="list list__languages">
+                     <li> Belarusian </li>
+                     <li> English (A1) </li>
+                     <li> Russian </li>
+                  </ul>
+               </div>
+            </section>
+
+         </div>
+      </div>
+   </main>
+
+   <footer>
+      <div class="container">
+         <div class="ft">
+            <div class="github">
+               <a href="https://github.com/masya2021" target="blank" class="github__link"><img
+                     src="./assets/img/github.png" class="github__logo" alt="logo__GitHub">
+                  <span class="github__title">masya2021</span>
+               </a>
+            </div>
+            <div class="year">2025</div>
+            <div class="rss">
+               <a href="https://rs.school/courses/javascript-ru" target="blank">
+                  <img src="./assets/svg/rs_school_js.svg" class="logo-school" alt="RSSchool__icon"></a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+</body>
+
+</html>
