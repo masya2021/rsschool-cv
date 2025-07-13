@@ -1,0 +1,449 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+
+  font-family: "Nuosu SIL", serif;
+  font-size: 16px;
+}
+h1,
+h2 {
+  margin: 0;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.nav {
+  background-color: rgb(228, 228, 228);
+  opacity: 0.85;
+  padding: 15px 15px;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  list-style: none;
+  line-height: 50px;
+  gap: 5%;
+}
+.nav-link {
+  text-decoration: none;
+  color: #fa0808;
+  font-family: "Nuosu SIL", serif;
+  font-size: 16px;
+}
+.nav-link:hover {
+  text-decoration: none;
+  color: rgb(29, 5, 253);
+  transition: color 0.4s;
+}
+.header__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px 0;
+
+  background-color: rgb(248, 248, 248);
+}
+.header__content-data {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.foto img {
+  max-width: 320px;
+  border: 3px solid rosybrown;
+}
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 15px;
+}
+.person__name {
+  font-size: 65px;
+  font-family: "Tai Heritage Pro", serif;
+  font-weight: 700;
+  color: black;
+}
+
+.person__direction {
+  font-family: "Nuosu SIL", serif;
+  font-size: 26px;
+  margin: 0 auto;
+}
+.main {
+  flex: 1 1 auto;
+}
+.common {
+  display: flex;
+  height: 100%;
+}
+.contacts {
+  display: flex;
+  background-color: rgb(248, 248, 248);
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  line-height: 150%;
+  padding: 10px;
+  font-family: "Tai Heritage Pro", serif;
+  font-weight: normal;
+}
+.size {
+  font-size: 18px;
+  line-height: 150%;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.telegram-link {
+  padding-top: 10px;
+}
+.telegram-link img {
+  width: 35px;
+  height: auto;
+  padding: 0 15px 0 7px;
+}
+.viber {
+  display: flex;
+  align-items: center;
+}
+.viber-link {
+  padding-top: 10px;
+  padding-left: 7px;
+}
+.viber-link img {
+  width: 32px;
+  height: 32px;
+}
+.description {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  background-color: rgba(255, 251, 251, 0.986);
+  padding: 20px;
+}
+.title {
+  padding: 18px 0;
+  font-family: "Tai Heritage Pro", serif;
+  font-size: 26px;
+  color: limegreen;
+  text-align: center;
+}
+.description__text {
+  line-height: 150%;
+  font-family: "Nuosu SIL", serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: start;
+  color: black;
+  text-indent: 25px;
+  padding: 0 20px;
+}
+.list {
+  list-style: square;
+  padding-left: 55px;
+
+  font-family: "Nuosu SIL", serif;
+  font-weight: 400;
+  font-size: 18px;
+  position: relative;
+}
+.list__skills {
+  padding-left: 85px;
+}
+.progress {
+  max-width: 280px;
+  width: 100%;
+  height: 10px;
+  margin-top: 5px;
+  background-color: #e71a1ab4;
+}
+.progress span {
+  display: block;
+  height: 100%;
+}
+.progress__html {
+  width: 80%;
+}
+.progress__css {
+  width: 65%;
+}
+.progress__js {
+  width: 45%;
+}
+.progress__figma {
+  width: 55%;
+}
+.progress__photoshop {
+  width: 45%;
+}
+
+.progress__github {
+  width: 50%;
+}
+.skill__progress {
+  background-color: yellowgreen;
+}
+.list li {
+  padding: 5px 0 5px 10px;
+}
+.flex-li {
+  display: flex;
+  list-style: square;
+  align-items: center;
+}
+.startcode {
+  display: block;
+  max-width: 434px;
+  overflow-x: auto;
+  padding: 0.5em;
+  background-color: rgb(245, 249, 249);
+  color: #000;
+}
+.purple {
+  color: #660494;
+}
+.orange {
+  color: #e26d0c;
+}
+.blue {
+  color: #0281ca;
+}
+.project__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.list__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.list__name {
+  padding: 5px 0;
+  text-align: center;
+
+  font-family: "Nuosu SIL", serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.list__link img {
+  width: 370px;
+  height: 250px;
+}
+.list__languages {
+  padding-left: 85px;
+}
+footer .ft {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(234 239 239 / 36%);
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.github {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.github__link {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  text-decoration: none;
+}
+.github__title {
+  padding-top: 5px;
+  cursor: pointer;
+  color: black;
+}
+.github__logo {
+  padding-left: 10px;
+  width: 45px;
+  height: auto;
+}
+footer .year {
+  font-size: 25px;
+  color: crimson;
+}
+footer .ft .rss a img {
+  width: 120px;
+  height: 86px;
+}
+
+/*     B U R G E R   M E N U
+    =======================    */
+
+.burger {
+  display: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.burger.burger-close {
+  display: none;
+}
+.burger__item {
+  display: block;
+  width: 35px;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 1;
+  font-size: 0;
+  color: transparent;
+  position: relative;
+}
+.burger__item::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  z-index: 1;
+}
+.burger__item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  z-index: 1;
+}
+@media (max-width: 1312px) {
+  .list__link img {
+    width: 410px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .person__name {
+    max-width: 160px;
+    padding-right: 25px;
+    font-size: 50px;
+    align-self: center;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .common {
+    flex-direction: column;
+  }
+  .contacts {
+    width: 100%;
+    padding: 15px 0;
+  }
+  .description {
+    width: 100%;
+    padding: 0;
+  }
+  .skills {
+    padding: 0 20px;
+  }
+  .code {
+    padding: 0 20px;
+  }
+  .languges {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 662px) {
+  .person__direction {
+    text-align: center;
+  }
+  .list__skills {
+    padding-left: 55px;
+  }
+}
+@media (max-width: 576px) {
+  .header__content {
+    flex-direction: column;
+  }
+  .foto {
+    text-align: center;
+  }
+  .person__name {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .person__direction {
+    font-size: 22px;
+  }
+  .common {
+    flex-direction: column;
+  }
+  .contacts {
+    width: 100%;
+    padding: 15px 0;
+  }
+  .description {
+    width: 100%;
+    padding: 0;
+  }
+  .list__link img {
+    max-width: 390px;
+    height: auto;
+  }
+}
+@media (max-width: 468px) {
+  .list__link img {
+    max-width: 330px;
+  }
+  .list__skills {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 378px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .name {
+    font-size: 46px;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .list__link img {
+    max-width: 300px;
+  }
+  .foto img {
+    transform: scale(0.85);
+  }
+  footer .ft {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .ft .rss a img {
+    width: 120px;
+    height: auto;
+  }
+}
+@media (max-width: 340px) {
+  .foto img {
+    width: 260px;
+  }
+}
